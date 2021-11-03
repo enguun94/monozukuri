@@ -1,0 +1,196 @@
+
+ double tempo = 18;
+  
+  double zen = 6000/tempo*4;
+
+
+void setup() {
+  pinMode(2,OUTPUT);
+  pinMode(3,OUTPUT);
+  pinMode(4,OUTPUT);
+  pinMode(5,OUTPUT);
+  pinMode(6,OUTPUT);
+  pinMode(7,OUTPUT);
+  pinMode(8,OUTPUT);
+  pinMode(9,OUTPUT);
+  pinMode(10,OUTPUT);
+  pinMode(11,OUTPUT);
+}
+
+void loop() {
+  /*digitalWrite(10,HIGH);*/
+ g(8);                            a(8);r(8);g(8);a(8);r(8);c2(8);  b(8);r(8);g(8);a(8);r(8);g(8);   a(8);r(8);g(8);a(8);r(8);f(8);   e(8);r(8);c2(8);d2(8);r(8);g(8);
+ a(8);r(8);g(8);a(8);r(8);c2(8);  b(8);r(8);g(8);a(8);r(8);r(8);   d2(8);r(8);e(8);f(8);r(8);f(8);  g(8); r(8);r(8);g(8);r(8);g(8);  a(8);r(8);g(8);a(8);r(8);c2(8);
+ b(8);r(8);g(8);a(8);r(8);g(8);   a(8);r(8);g(8);a(8);r(8);f(8);   e(8);r(8);c2(8);d2(8);r(8);g(8); a(8);r(8);g(8);a(8);r(8);c2(8);  b(8);r(8);g(8);a(8);r(8);r(8);
+ fg(8);r(8);r(8);a(8);r(8);r(8);  d2(8);r(8);r(8);ab(8/3);         a(8);r(8);a(8);b(8);a(8);b(8);   c2(8/3);g(8/2);r(8);             f(8);r(8);f(8);g(8);fg(8);g(8);  g(8);r(8);r(8);g(8);r(8);g(8);
+ a(8);r(8);g(8);a(8);r(8);c2(8);  b(8);r(8);g(8);a(8);r(8);g(8);   a(8);r(8);g(8);a(8);r(8);c2(8);  b(8);r(8);g(8);a(8);r(8);g(8);   a(8);r(8);g(8);a(8);r(8);f(8);
+ e(8);r(8);r(8);c2(8);r(8);r(8);  r(8);r(8);r(8);r(8);r(8);g(8);  　a(8);r(8);g(8);a(8);r(8);f(8);  e(8);r(8);r(8);c2(8);r(8);r(8);  r(1);r(1);r(1);r(1); 
+
+  void c1(double t){
+digitalWrite(2,HIGH);
+digitalWrite(3,HIGH);
+digitalWrite(4,HIGH);
+digitalWrite(5,HIGH);
+digitalWrite(6,HIGH);
+digitalWrite(7,HIGH);
+digitalWrite(8,HIGH);
+digitalWrite(9,HIGH);
+digitalWrite(11,HIGH);
+delay(zen/t);
+  }
+ void d1(double t){
+digitalWrite(2,HIGH);
+digitalWrite(3,HIGH);
+digitalWrite(4,HIGH);
+digitalWrite(5,HIGH);
+digitalWrite(6,HIGH);
+digitalWrite(7,HIGH);
+digitalWrite(8,HIGH);
+digitalWrite(9,LOW);
+digitalWrite(11,HIGH);
+delay(zen/t);
+  }
+  void e(double t){
+digitalWrite(2,HIGH);
+digitalWrite(3,HIGH);
+digitalWrite(4,HIGH);
+digitalWrite(5,HIGH);
+digitalWrite(6,HIGH);
+digitalWrite(7,HIGH);
+digitalWrite(8,LOW);
+digitalWrite(9,LOW);
+digitalWrite(11,HIGH);
+delay(zen/t);
+  }
+  void f(double t){
+digitalWrite(2,HIGH);
+digitalWrite(3,HIGH);
+digitalWrite(4,HIGH);
+digitalWrite(5,HIGH);
+digitalWrite(6,HIGH);
+digitalWrite(7,LOW);
+digitalWrite(8,LOW);
+digitalWrite(9,LOW);
+digitalWrite(11,HIGH);
+delay(zen/t);
+  }
+  void g(double t){
+digitalWrite(2,HIGH);
+digitalWrite(3,HIGH);
+digitalWrite(4,HIGH);
+digitalWrite(5,HIGH);
+digitalWrite(6,LOW);
+digitalWrite(7,LOW);
+digitalWrite(8,LOW);
+digitalWrite(9,LOW);
+digitalWrite(11,HIGH);
+delay(zen/t);
+  }
+void a(double t){
+digitalWrite(2,HIGH);
+digitalWrite(3,HIGH);
+digitalWrite(4,HIGH);
+digitalWrite(5,LOW);
+digitalWrite(6,LOW);
+digitalWrite(7,LOW);
+digitalWrite(8,LOW);
+digitalWrite(9,LOW);
+digitalWrite(11,HIGH);
+delay(zen/t);
+  }
+void b(double t){
+digitalWrite(2,HIGH);
+digitalWrite(3,HIGH);
+digitalWrite(4,LOW);
+digitalWrite(5,LOW);
+digitalWrite(6,LOW);
+digitalWrite(7,LOW);
+digitalWrite(8,LOW);
+digitalWrite(9,LOW);
+digitalWrite(11,HIGH);
+delay(zen/t);
+  }
+void c2(double t){
+digitalWrite(2,HIGH);
+digitalWrite(3,LOW);
+digitalWrite(4,HIGH);
+digitalWrite(5,LOW);
+digitalWrite(6,LOW);
+digitalWrite(7,LOW);
+digitalWrite(8,LOW);
+digitalWrite(9,LOW);
+digitalWrite(11,HIGH);
+delay(zen/t);
+  }
+  void d2(double t){
+digitalWrite(2,LOW);
+digitalWrite(3,LOW);
+digitalWrite(4,HIGH);
+digitalWrite(5,LOW);
+digitalWrite(6,LOW);
+digitalWrite(7,LOW);
+digitalWrite(8,LOW);
+digitalWrite(9,LOW);
+digitalWrite(11,HIGH);
+delay(zen/t);
+  }
+    void fg(double t){
+digitalWrite(2,HIGH);
+digitalWrite(3,HIGH);
+digitalWrite(4,HIGH);
+digitalWrite(5,HIGH);
+digitalWrite(6,LOW);
+digitalWrite(7,HIGH);
+digitalWrite(8,HIGH);
+digitalWrite(9,HIGH);
+digitalWrite(11,HIGH);
+delay(zen/t);
+  }
+    void ab(double t){
+digitalWrite(2,HIGH);
+digitalWrite(3,HIGH);
+digitalWrite(4,LOW);
+digitalWrite(5,HIGH);
+digitalWrite(6,HIGH);
+digitalWrite(7,LOW);
+digitalWrite(8,LOW);
+digitalWrite(9,LOW);
+digitalWrite(11,HIGH);
+delay(zen/t);
+  }
+    void cd2(double t){
+digitalWrite(2,LOW);
+digitalWrite(3,HIGH);
+digitalWrite(4,HIGH);
+digitalWrite(5,LOW);
+digitalWrite(6,LOW);
+digitalWrite(7,LOW);
+digitalWrite(8,LOW);
+digitalWrite(9,LOW);
+digitalWrite(11,HIGH);
+delay(zen/t);
+  }
+    void de2(double t){
+digitalWrite(2,LOW);
+digitalWrite(3,LOW);
+digitalWrite(4,HIGH);
+digitalWrite(5,HIGH);
+digitalWrite(6,HIGH);
+digitalWrite(7,HIGH);
+digitalWrite(8,HIGH);
+digitalWrite(9,LOW);
+digitalWrite(11,HIGH);
+delay(zen/t);
+  }
+  void r(double t){
+    digitalWrite(2,LOW);
+digitalWrite(3,LOW);
+digitalWrite(4,LOW);
+digitalWrite(5,LOW);
+digitalWrite(6,LOW);
+digitalWrite(7,LOW);
+digitalWrite(8,LOW);
+digitalWrite(9,LOW);
+digitalWrite(11,LOW);
+delay(zen/t);
+  }
